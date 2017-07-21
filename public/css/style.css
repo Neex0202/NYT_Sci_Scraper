@@ -14,12 +14,16 @@
           overflow: auto;
           width: 60%;
           height: 700px;
+          margin: 10px;
       }
 
       #notes {
           float: right;
           width: 30%;
-      }
+          margin: 20px;
+
+                }
+
 
       textarea,
       input {
@@ -36,4 +40,10 @@
       textarea {
           height: 200px;
           font-size: 18px;
+      }
+
+      p {
+        border-bottom: 2px solid darkgrey;
+        padding: 5px;
+        /*border-radius: 5px;*/
       }

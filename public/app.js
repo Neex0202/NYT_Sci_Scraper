@@ -1,15 +1,18 @@
 //EVENT LISTENER ON SCRAPE BUTTON
-$(document).on("click", "#scrapeButton", function{
+console.log('LOADEDDDDD')
+$(document).on("click", "#scrapeButton", function(){
 //ajax call to get scrape route
+
 $.ajax({
-  method: "POST",
+  method: "GET",
   url: "/scrape"
 
 }).done(function(scrapedBitch){
   console.log(scrapedBitch);
   return scrapedBitch;
-}
-})
+});
+});
+
 
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
